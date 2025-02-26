@@ -1,6 +1,6 @@
 import os
 import subprocess
-import AUTRTT
+import AUTRT
 import time
 import sys
 from itertools import cycle
@@ -41,10 +41,10 @@ try:
         subprocess.run(["xdg-open", link])  # For Linux or macOS, this will open the URL in the default browser
 
     print("▶️ Running main function...")
-    AUTRTT.main()  # Assumes 'main' exists; will raise an error if it doesn't.
+    AUTRT.main()  # Assumes 'main' exists; will raise an error if it doesn't.
 
 except ImportError as e:
     print("❌ Import error:", e)
 
 except AttributeError:
-    print("⚠️ 'main' function not found. Check available attributes:", dir(AUTRTT))
+    print("⚠️ 'main' function not found. Check available attributes:", dir(AUTRT))
